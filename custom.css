@@ -84,3 +84,8 @@
     font-weight: bold;
     font-style: italic;
 }
+
+.code {
+background-color: whitesmoke;
+font-size: 80%;
+}

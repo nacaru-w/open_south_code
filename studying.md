@@ -1,6 +1,6 @@
 ---
-title: Cómo estudiar mejor
-author: <span style="text-transform:lowercase"><a href="https://twitter.com/mx_psi">@mx_psi</a>(<a href="http://mstdn.io/@mx_psi">@mstdn.io</a>)</span>
+title: "<span class='container'><img src='./img/Twinkle_Lite_logo.svg' /></span><br/>Twinkle Lite <span> <br/><span style='font-size: 0.65em;'>Una herramienta que ayuda al mantenimiento en Wikipedia</span>"
+author: <a href="https://es.wikipedia.org/wiki/Usuario:Nacaru">Nacho Casares</a>
 lang: es
 theme: white
 css: ["custom.css"]
@@ -13,210 +13,130 @@ history: true
 transitionSpeed: fast
 ---
 
-## {data-background-image="img/books.jpg"}
+## 
 
-<div style="font-size:1.5em">
-[`mx-psi.github.io/studying`](https://mx-psi.github.io/studying)
+<div style="font-size:1.2em">
+[`es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite`](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite)
 </div>
 
 
-## ¿Cómo estudiar mejor?
+## ¿Qué es Twinkle Lite?
 
-- Hay muchos factores que no podemos o sabemos controlar.
-- [Correlación no implica causalidad](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation) (¡a veces sí!).
-- No soy un experto.
+- Herramienta concebida para facilitar el mantenimiento en Wikipedia
+- Basada en una herramienta homónima desarrollada en la Wikipedia inglesa (¡que ya tuvo un intento de integración en eswiki en 2008!)*
+- Escrita en el lenguaje de programación [JavaScript](https://es.wikipedia.org/wiki/JavaScript)
 
-
-::: notes
-Algunos factores son el estátus socioeconómico, IQ, características de personalidad o los profesores.
-:::
-
-# Cómo mejorar la productividad {data-background-image="img/balcony.jpg"}
-
-## Sueño y nutrición
-
-<span style="font-size:1.6em">
-¡Dormir y tener una alimentación adecuada es importante!
-</span>
 
 ::: notes
-[Sleep loss, learning capacity and academic performance](https://www.sciencedirect.com/science/article/pii/S1087079205001231)
-:::
-
-## Gestión del tiempo
-
-Las técnicas de gestión del tiempo no tienen una relación clara con el rendimiento académico.
-Sí tienen efectos positivos en la reducción del estrés y la satisfacción en el trabajo.
-
-::: notes
-[A review of the time management literature](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.4966&rep=rep1&type=pdf)
+El Twinkle primigenio en eswiki permaneció utilizable durante unos años y fue posteriormente abandonado
 :::
 
 ***
 
-Algunas cosas que parecen ayudar:
+- Hace uso de una librería mantenida por usuarios de la Wikipedia inglesa llamada [Morebits](https://en.wikipedia.org/wiki/MediaWiki:Gadget-morebits.js).
+- Emplea la [API](https://www.mediawiki.org/wiki/API:Main_page) de MediaWiki.
+- «Lite» porque está concebido como una versión ligera y sencilla de mantener en el tiempo.
 
-- **Anotar** las cosas que tienes que hacer.
-- Establecer **objetivos** de estudio: qué, cuándo, cuánto tiempo (¡y [seguirlos](https://www.lesswrong.com/posts/RWo4LwFzpHNQCTcYt/how-to-beat-procrastination)!).
-- **Priorizar** las tareas.
+# Instalación  {data-background-image="img/Elegant_Background-3.jpg"}
 
-::: notes
-No hay evidencia de que ninguna técnica específica sea mejor.
-Yo uso [`org-mode`](https://orgmode.org/) y recomiendo [Beeminder](https://www.beeminder.com/).
-:::
+## Instrucciones
 
-## ¿Nootrópicos?
-
-- Efectos mucho menores que las técnicas de estudio efectivas.
-- Muchos son sustancias adictivas, ilegales o poco estudiadas.
-- El café parece estar bien.
-
-::: notes
-[Gwern -- Nootropics](https://www.gwern.net/Nootropics)
-:::
+(Toda la información se halla en [la página de documentación en Wikipedia](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite#Instalaci%C3%B3n))
 
 ***
 
-Si aun así quieres probarlos:
+- Crea tu página especial `common.js`: puede hacerse a través de [este enlace](https://es.wikipedia.org/wiki/Especial:MiP%C3%A1gina/common.js)
+- Una vez creada, copia en ella la línea de código que aparece aquí ([también disponible en la documentación](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite#Instalaci%C3%B3n)):*
 
-<div style="font-size:1.6em">Toma [dosis pequeñas](http://drugs.tripsit.me/category/nootropic), [infórmate](https://darktka.github.io/) y [ten cuidado](http://slatestarcodex.com/2017/08/10/brief-cautionary-notes-on-branded-combination-nootropics/)</div>
-
-::: notes
-LibreIM no se hace responsable de qué hagas con esta información.
-Esto no es un consejo médico.
-Pórtate bien.
-:::
-
-
-# Técnicas de estudio {data-background-image="img/orange.jpg"}
-
-## Poco útiles
-
-Resumir
-: Lleva mucho tiempo. Es mejor la práctica de recuperación (*retrieval practice*). <sup><span style="font-size:0.5em">[[1]](http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf),[[2]](https://www.tandfonline.com/doi/abs/10.1080/09658210802647009)</span></sup>
-
-Subrayar
-: Contraproducente si lo haces mal. <sup><span style="font-size:0.5em">[[1]](https://www.ncbi.nlm.nih.gov/pubmed/19650523)</span></sup>
-
-Releer
-: Poco útil en comparación con otras técnicas. <sup><span style="font-size:0.5em">[[1]](http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf)</span></sup>
-
+<span style="font-size: 0.7em; font-family: monospace">
+    mw.loader.load("https://es.wikipedia.org/w/index.php?title=Usuario:Nacaru/twinkle-lite.js&action=raw&ctype=text/javascript");
+</span> 
 
 ::: notes
-Todas tienen efectos positivos pero pequeños si las haces correctamente.
+Probablemente en el futuro podrá activarse a través de la página de configuración personal
 :::
 
+*** 
 
-## Más útiles
+- Refresca la caché del navegador (Ctrl + F5 o Ctrl + R).
 
-<div class="twocol">
-
-<div>
-1. Repetición espaciada
-2. Práctica de recuperación
-3. Elaboración
-4. Práctica intercalada
-5. Ejemplos concretos
-6. Codificación dual
-</div>
-
-<div>
-Me centro en las dos primeras.
-</div>
-</div>
-
-::: notes
-[Six Strategies for Effective Learning -- The Learning Scientists](http://www.learningscientists.org/s/Spanish-Six-Strategies-for-Effective-Learning-posters-cw5g.pdf)
-:::
-
-
-
-# Repetición espaciada {data-background-image="img/books2.jpg"}
-
-## Qué es
-
-<div class="twocol">
-<div>
-![Curva del olvido](forgetting-curve.png)
-</div>
-<div>
-Distancias las sesiones de estudio de un mismo tema.
-
-Intentas recordar algo justo cuando lo vas a olvidar.
-</div>
-</div>
-
-::: notes
-[Repetición espaciada: consejos](https://codual.github.io/2016/07/07/repeticion-espaciada/)
-:::
-
-
-## Cómo usarlo
-
-- Lo más popular: *flashcards* con [una aplicación](https://en.wikipedia.org/wiki/List_of_flashcard_software).
-- Yo uso [Anki](https://apps.ankiweb.net/). Es libre, y es gratuita para Windows, macOS, GNU/Linux y Android.
-- La aplicación se encarga de gestionar el momento óptimo para volverte a preguntar.
-
-::: notes
-En iOS es de pago, pero podéis usar [Ankiweb](https://ankiweb.net/about).
-:::
+<span style="font-size: 1.6em;">¡Ya estaría listo!</span>
 
 ***
 
-En Android: [Ankidroid](https://f-droid.org/en/packages/com.ichi2.anki/).
+Si todo se ha instalado correctamente debería de aparecer este menú en la parte superior de la interfaz:
 
-[Ankiweb](https://ankiweb.net/about) es un servicio gratuito para sincronizar las tarjetas.
-
-Las tarjetas se dividen en mazos y tienen distintos tipos: básico, cloze, invertidas.
-
-::: notes
-Para sincronizar hay una [alternativa libre](https://github.com/ankicommunity/anki-sync-server).
-:::
+![](img/Twinkle_lite_2.png){ width=80% }
 
 ***
 
-Algunos consejos:
+Si usas la interfaz antigua Vector 2010 o si has ocultado el menú de la derecha, las opciones de Twinkle Lite se situarán en el menú de edición superior en su lugar.
 
-- Comprende antes de intentar memorizar
-- Utiliza el tipo de tarjeta adecuado
-- Incluye todo el contexto
-- Divide la información
-- Evita "dar pistas"
-- Evita ambigüedades
+![](img/Twinkle_lite_3.png){ width=80% }
 
-::: notes
-[Effective learning: Twenty rules of formulating knowledge](https://www.supermemo.com/en/archives1990-2015/articles/20rules)
-:::
+# Utilización {data-background-image="img/Back3.png"}
 
+## Etiquetado
 
-## Cuándo usarlo
+TL posee un módulo que incluye un catálogo de plantillas que pueden colocarse en el artículo.
 
-- Puedes dividir el conocimiento en unidades pequeñas.
-- Tienes al menos **5 días** (cuanto más tiempo mejor).
-- Tienes un momento fijo del día para hacerlo (p. ej.: transporte público).
+![](img/tag%20module%20image.png){ width=9.25em }
 
-## Matemáticas
+También incluye una opción para notificar al creador de la página, así como para especificar una razón.
 
-- Haz una tarjeta por proposición, definición, teorema.
-- <span class="tex2jax_ignore">`\(e^{i\tau}\)`</span>    →    $e^{i\tau}$ (`Ctrl`+`M`,`E`).
-- Puedes usar mazos ya hechos: [`mx-psi/anki`](https://github.com/mx-psi/anki).
+## Avisos a usuarios
 
-::: notes
-Necesitáis Anki 2.1 y AnkiDroid 2.9 o superior. Para versiones anteriores hay que utilizar [`dvipng`](https://en.wikipedia.org/wiki/Dvipng).
-:::
+De forma similar, pueden dejarse mensajes en la página de usuario de forma sencilla mediante el catálogo.
 
+![](img/warning%20module%20image.png){ width=9.25em }
+
+## Borrado rápido
+
+Módulo para colocación de plantillas de borrado rápido, útil p. ej. en casos de creación de páginas vandálicas
+
+![](img/speedy%20module%20image.png){ width=9.25em }
+
+## Denuncias
+
+Permite denunciar usuarios a través de un simple formulario.
+
+![](img/reports%20module%20image.png){ width=9.25em }
+
+El _script_ se encarga automáticamente de colocar la denuncia en el tablón adecuado.
+
+## Protección de páginas
+
+Muestra el estado de protección de una página y permite solicitar su protección.
+
+![](img/protection%20module%20image.png){ width=9.25em }
+
+También se puede utilizar para solicitar la __desprotección__ de una página.
+
+## Consultas de borrado
+
+Simplifica todo el proceso de apertura de una consulta de borrado a través de un formulario.
+
+![](img/cdb%20module%20image.png){ width=9.25em }
+
+Al igual que otros módulos, incluye una opción para dejar un mensaje de aviso en su PD a la persona que creó la página.
+
+# Futuro {data-background-image="img/Elegant_Background-2.jpg"}
+
+## Ideas
+
+- Expandir el módulo de etiquetado para incluir plantillas que van en otras posiciones dentro del artículo (<span class="code">`{{control de autoridades}}`</span> o <span class="code">`{{NF}}`</span>).
+- Añadir características que ayuden al mantenimiento de tareas específicas de los bibliotecarios.
+- Habilitar la posibilidad de activar herramienta en el menú de configuración de usuario a través de [MediaWiki:Gadgets-definition](https://es.wikipedia.org/wiki/MediaWiki:Gadgets-definition) (hay una solicitud procesándose en el tablón de editores de interfaz)
 
 # Fin
 
 ## Enlaces
 
+- [Página de documentación en eswiki](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite)
+- [Repositorio público en GitHub](https://github.com/nacaru-w/twinkle-lite)
+- [Página de Wikipedia en la que se encuentra el código concatenado](https://es.wikipedia.org/wiki/Usuario:Nacaru/twinkle-lite.js)
 
-- [Repetición espaciada: consejos](https://codual.github.io/2016/07/07/repeticion-espaciada/)
-- [*The Learning Scientists*](http://www.learningscientists.org/downloadable-materials)
-- [*Learning About Learning Report*](http://www.nctq.org/dmsView/Learning_About_Learning_Report)
-- [*Improving learning*](http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf)
-- [*Optimizing Learning in College*](http://pps.sagepub.com/content/11/5/652.full.pdf)
-- [*Learning how to learn*](https://www.coursera.org/learn/learning-how-to-learn)
-- Mi Pinboard: [*'education'*](https://pinboard.in/u:mx_psi/t:education) y [*'learning'*](https://pinboard.in/u:mx_psi/t:learning)
+## Atribución de imágenes
 
-
+- [Back3 de pbgtree](https://commons.wikimedia.org/wiki/File:Back3.png) (CC BY-SA 4.0)
+- [Elegant Background-3](https://commons.wikimedia.org/wiki/File:Elegant_Background-3.jpg) y [Elegant Background-2](https://commons.wikimedia.org/wiki/File:Elegant_Background-2.jpg) de Nick Roach (GNU)
