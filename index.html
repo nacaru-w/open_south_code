@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Nacho Casares">
-  <title> Twinkle Lite   Una herramienta que ayuda al mantenimiento en Wikipedia</title>
+  <title> Herramientas en el ecosistema Wikipedia   o cómo hacer 100.000 ediciones en una semana</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -38,9 +38,10 @@
 
 <section id="title-slide">
   <h1 class="title"><span
-class="container"><img src='./img/Twinkle_Lite_logo.svg' /></span><br/>Twinkle
-Lite <span> <br/><span style="font-size: 0.65em;">Una herramienta que
-ayuda al mantenimiento en Wikipedia</span></h1>
+class="container"><img style='max-width: 3em;' src='./img/wmes_logo.svg' /></span><br/>Herramientas
+en el ecosistema Wikipedia <span> <br/><span
+style="font-size: 0.65em;">o cómo hacer 100.000 ediciones en una
+semana</span></h1>
   <p class="author"><a href="https://es.wikipedia.org/wiki/Usuario:Nacaru">Nacho
 Casares</a></p>
 </section>
@@ -49,91 +50,103 @@ Casares</a></p>
 <h2></h2>
 <div style="font-size:1.2em">
 <p><a
-href="https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite"><code>es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite</code></a></p>
+href="https://github.com/nacaru-w"><code>https://github.com/nacaru-w</code></a></p>
 </div>
+</section>
+<section id="cómo-hacer-scripts-para-wikipedia" class="slide level2">
+<h2>Cómo hacer scripts para Wikipedia</h2>
+<ul>
+<li>Wikipedia (y el resto de proyectos Wikimedia) permiten elaborar
+scripts de usuario a través de las subpáginas de ese espacio de
+nombres.</li>
+<li>Estos scripts pueden importarse través de tu página de
+<code>common.js</code> (<a
+href="https://es.wikipedia.org/wiki/Especial:MiP%C3%A1gina/common.js">es.wikimedia.org/Usuario:NOMBRE
+DE USUARIO/common.js</a>)</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><img data-src="./img/my_profile_screenshot.png" /></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="./img/twinkle_lite_screenshot.png" /></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="./img/commonjs_screenshot.png" /></p>
+<p>Solo hay que
+añadir<br/><code>importScript('RUTA DEL SCRIPT EN WP')</code><br/>para
+que empiece a funcionar.</p>
 </section>
 <section id="qué-es-twinkle-lite" class="slide level2">
 <h2>¿Qué es Twinkle Lite?</h2>
+<p><span style="text-align: center;"><a
+href="https://github.com/nacaru-w/twinkle-lite">https://github.com/nacaru-w/twinkle-lite</a></span></p>
 <ul>
 <li>Herramienta concebida para facilitar el mantenimiento en
 Wikipedia</li>
 <li>Basada en una herramienta homónima desarrollada en la Wikipedia
 inglesa (¡que ya tuvo un intento de integración en eswiki en
 2008!)*</li>
-<li>Escrita en el lenguaje de programación <a
-href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+<li>Escrita en <a
+href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a>, aunque
+pronto será transcluida a TS.</li>
 </ul>
-<aside class="notes">
-<p>El Twinkle primigenio en eswiki permaneció utilizable durante unos
-años y fue posteriormente abandonado</p>
-</aside>
 </section>
 <section class="slide level2">
 
 <ul>
-<li>Hace uso de una librería mantenida por usuarios de la Wikipedia
-inglesa llamada <a
-href="https://en.wikipedia.org/wiki/MediaWiki:Gadget-morebits.js">Morebits</a>.</li>
-<li>Emplea la <a
+<li>Emplea la librería <a
+href="https://github.com/wikimedia-gadgets/twinkle/wiki/morebits">Morebits</a>
+para el front-end</li>
+<li>Interacciona con la <a
 href="https://www.mediawiki.org/wiki/API:Main_page">API</a> de
 MediaWiki.</li>
-<li>«Lite» porque está concebido como una versión ligera y sencilla de
-mantener en el tiempo.</li>
+<li>En pocas palabras: <strong>lleva a cabo ediciones por el usuario que
+normalmente implican añadir Wikicódigo</strong></li>
+<li>Más información en <a
+href="https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite">https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite</a>
+(buscando «Twinkle Lite» en Google también sale)</li>
 </ul>
-</section>
-<section>
-<section id="instalación" class="title-slide slide level1"
-data-background-image="img/Elegant_Background-3.jpg">
-<h1
-data-background-image="img/Elegant_Background-3.jpg">Instalación</h1>
+<!-- # Instalación  {data-background-image="img/Elegant_Background-3.jpg"}
 
-</section>
-<section id="instrucciones" class="slide level2">
-<h2>Instrucciones</h2>
-<p>(Toda la información se halla en <a
-href="https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite#Instalaci%C3%B3n">la
-página de documentación en Wikipedia</a>)</p>
-</section>
-<section class="slide level2">
+## Instrucciones
 
-<ul>
-<li>Crea tu página especial <code>common.js</code>: puede hacerse a
-través de <a
-href="https://es.wikipedia.org/wiki/Especial:MiP%C3%A1gina/common.js">este
-enlace</a></li>
-<li>Una vez creada, copia en ella la línea de código que aparece aquí
-(<a
-href="https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite#Instalaci%C3%B3n">también
-disponible en la documentación</a>):*</li>
-</ul>
-<p><span style="font-size: 0.7em; font-family: monospace">
-mw.loader.load(“https://es.wikipedia.org/w/index.php?title=Usuario:Nacaru/twinkle-lite.js&amp;action=raw&amp;ctype=text/javascript”);
-</span></p>
-<aside class="notes">
-<p>Probablemente en el futuro podrá activarse a través de la página de
-configuración personal</p>
-</aside>
-</section>
-<section class="slide level2">
+(Toda la información se halla en [la página de documentación en Wikipedia](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite#Instalaci%C3%B3n))
 
-<ul>
-<li>Refresca la caché del navegador (Ctrl + F5 o Ctrl + R).</li>
-</ul>
-<p><span style="font-size: 1.6em;">¡Ya estaría listo!</span></p>
-</section>
-<section class="slide level2">
+***
 
-<p>Si todo se ha instalado correctamente debería de aparecer este menú
-en la parte superior de la interfaz:</p>
-<p><img data-src="img/Twinkle_lite_2.png" style="width:80.0%" /></p>
-</section>
-<section class="slide level2">
+- Crea tu página especial `common.js`: puede hacerse a través de [este enlace](https://es.wikipedia.org/wiki/Especial:MiP%C3%A1gina/common.js)
+- Una vez creada, copia en ella la línea de código que aparece aquí ([también disponible en la documentación](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite#Instalaci%C3%B3n)):*
 
-<p>Si usas la interfaz antigua Vector 2010 o si has ocultado el menú de
-la derecha, las opciones de Twinkle Lite se situarán en el menú de
-edición superior en su lugar.</p>
-<p><img data-src="img/Twinkle_lite_3.png" style="width:80.0%" /></p>
-</section></section>
+<span style="font-size: 0.7em; font-family: monospace">
+    mw.loader.load("https://es.wikipedia.org/w/index.php?title=Usuario:Nacaru/twinkle-lite.js&action=raw&ctype=text/javascript");
+</span> 
+
+::: notes
+Probablemente en el futuro podrá activarse a través de la página de configuración personal
+:::
+
+*** 
+
+- Refresca la caché del navegador (Ctrl + F5 o Ctrl + R).
+
+<span style="font-size: 1.6em;">¡Ya estaría listo!</span>
+
+***
+
+Si todo se ha instalado correctamente debería de aparecer este menú en la parte superior de la interfaz:
+
+![](img/Twinkle_lite_2.png){ width=80% }
+
+***
+
+Si usas la interfaz antigua Vector 2010 o si has ocultado el menú de la derecha, las opciones de Twinkle Lite se situarán en el menú de edición superior en su lugar.
+
+![](img/Twinkle_lite_3.png){ width=80% } -->
+</section>
 <section>
 <section id="utilización" class="title-slide slide level1"
 data-background-image="img/Back3.png">
@@ -188,28 +201,135 @@ través de un formulario.</p>
 style="width:9.25em" /></p>
 <p>Al igual que otros módulos, incluye una opción para dejar un mensaje
 de aviso en su PD a la persona que creó la página.</p>
+<!-- # Futuro {data-background-image="img/Elegant_Background-2.jpg"}
+
+## Ideas
+
+- Añadir características que ayuden al mantenimiento de tareas específicas de los bibliotecarios.
+- Habilitar la posibilidad de activar herramienta en el menú de configuración de usuario a través de [MediaWiki:Gadgets-definition](https://es.wikipedia.org/wiki/MediaWiki:Gadgets-definition) (hay una solicitud procesándose en el tablón de editores de interfaz)
+
+# Fin
+
+## Enlaces
+
+- [Página de documentación en eswiki](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite)
+- [Repositorio público en GitHub](https://github.com/nacaru-w/twinkle-lite)
+- [Página de Wikipedia en la que se encuentra el código concatenado](https://es.wikipedia.org/wiki/Usuario:Nacaru/twinkle-lite.js)
+
+## Atribución de imágenes
+
+- [Back3 de pbgtree](https://commons.wikimedia.org/wiki/File:Back3.png) (CC BY-SA 4.0)
+- [Elegant Background-3](https://commons.wikimedia.org/wiki/File:Elegant_Background-3.jpg) y [Elegant Background-2](https://commons.wikimedia.org/wiki/File:Elegant_Background-2.jpg) de Nick Roach (GNU) -->
 </section></section>
 <section>
-<section id="futuro" class="title-slide slide level1"
+<section id="cómo-hacer-100.000-ediciones-en-una-semana"
+class="title-slide slide level1"
 data-background-image="img/Elegant_Background-2.jpg">
-<h1 data-background-image="img/Elegant_Background-2.jpg">Futuro</h1>
+<h1 data-background-image="img/Elegant_Background-2.jpg">Cómo hacer
+100.000 ediciones en una semana</h1>
 
 </section>
-<section id="ideas" class="slide level2">
-<h2>Ideas</h2>
+<section id="bots" class="slide level2">
+<h2>Bots</h2>
+<p><span style="text-align: center;"><a
+href="https://es.wikipedia.org/wiki/Wikipedia:Bot">https://es.wikipedia.org/wiki/Wikipedia:Bot</a></span></p>
 <ul>
-<li>Expandir el módulo de etiquetado para incluir plantillas que van en
-otras posiciones dentro del artículo (<span
-class="code"><code>{{control de autoridades}}</code></span> o <span
-class="code"><code>{{NF}}</code></span>).</li>
-<li>Añadir características que ayuden al mantenimiento de tareas
-específicas de los bibliotecarios.</li>
-<li>Habilitar la posibilidad de activar herramienta en el menú de
-configuración de usuario a través de <a
-href="https://es.wikipedia.org/wiki/MediaWiki:Gadgets-definition">MediaWiki:Gadgets-definition</a>
-(hay una solicitud procesándose en el tablón de editores de
-interfaz)</li>
+<li>Son cuentas de usuario que poseen el flag «bot».</li>
+<li>Esto implica un <em>ratelimit</em> ilimitado.</li>
+<li>Requieren de <a
+href="https://es.wikipedia.org/wiki/Wikipedia:Bot/Autorizaciones">autorización
+por consenso comunitario</a></li>
+<li>Implica llevar a cabo ediciones de prueba que deben ser revisadas
+por la comunidad</li>
 </ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Existen numerosos <em>frameworks</em> que permiten gestionar más
+fácilmente las ediciones en Wikipedia y las interacciones con la API de
+MediaWiki.</li>
+<li>El más popular: <a
+href="https://pypi.org/project/pywikibot/">pywikibot</a> (<a
+href="https://www.mediawiki.org/wiki/Manual:Creating_a_bot#Programming_languages_and_libraries">lista
+completa</a>)</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="./img/bot_development_cycle.png"
+alt="Diagrama de flujo para la implementación de bots" />
+<figcaption aria-hidden="true">Diagrama de flujo para la implementación
+de bots</figcaption>
+</figure>
+</section>
+<section id="por-qué-hacer-un-bot" class="slide level2">
+<h2>¿Por qué hacer un bot?</h2>
+<ul>
+<li>En agosto de 2023 se llevó a cabo una <a
+href="https://es.wikipedia.org/wiki/Wikipedia:Votaciones/2023/Sobre_los_enlaces_internos_en_las_fechas">votación</a>
+por decisión comunitaria.</li>
+<li>Implicaba eliminar <em>todos</em> los enlaces internos a fechas en
+artículos <strong>no relacionados con el calendario</strong>.</li>
+<li>Trabajo manual elevado.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Debates al respecto en el Café: tarea difícil de implementar, en
+Wikipedia hay muchas formas de enlazar fechas internamente.</li>
+<li>Primeros pasos: script de usuario <a
+href="https://es.wikipedia.org/wiki/Usuario:Nacaru/date-link-remover.js"><code>date-link-remover.js</code></a></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><img data-src="./img/date-link-remover_demo.png" /></p>
+</section>
+<section id="nacarubot" class="slide level2">
+<h2>Nacarubot</h2>
+<p><span style="text-align: center"><a
+href="https://github.com/nacaru-w/NacaruBot">https://github.com/nacaru-w/NacaruBot</a></span></p>
+<ul>
+<li>Node.js (TypeScript)</li>
+<li>Framework para bots: <a
+href="https://www.npmjs.com/package/mwn">mwn</a></li>
+<li><a
+href="https://github.com/nacaru-w/NacaruBot/blob/main/src/regexes/regexes.ts">Expresiones
+regulares!!</a> (gracias a <a
+href="https://es.wikipedia.org/wiki/Usuario:-sasha-">-sasha-</a>)</li>
+<li><strong>Muchos tests!!!</strong></li>
+</ul>
+</section>
+<section id="más-seguridad" class="slide level2">
+<h2>Más seguridad</h2>
+<ul>
+<li>Evita ciertas categorías (tablas anuales, calendario, celebraciones
+del día, efemérides no oficiales, días)</li>
+<li>Posee una regex específica para títulos.</li>
+<li>Existe una <a
+href="https://es.wikipedia.org/wiki/Usuario:NacaruBot/exceptions.json">lista
+pública de excepciones</a> guardada como <code>JSON</code> que pueden
+actualizar los administradores.</li>
+</ul>
+</section>
+<section id="cómo-actúa" class="slide level2">
+<h2>Cómo actúa</h2>
+<ul>
+<li>Hace una petición a la API de MediaWiki que devuelve 50 artículos
+pseudoaleatorios.</li>
+<li>Analiza los títulos a través de una expresión regular para descartar
+artículos relacionados con el calendario.</li>
+<li>Analiza el texto para ver si hay enlaces internos a fecha.</li>
+<li>Aplica las expresiones regulares y devuelve el string con las
+modificaciones.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><img data-src="./img/bot.png" /></p>
 </section></section>
 <section>
 <section id="fin" class="title-slide slide level1">
@@ -221,12 +341,15 @@ interfaz)</li>
 <ul>
 <li><a
 href="https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite">Página de
-documentación en eswiki</a></li>
+documentación de Twinkle Lite en eswiki</a></li>
 <li><a href="https://github.com/nacaru-w/twinkle-lite">Repositorio
-público en GitHub</a></li>
+público de Twinkle Lite en GitHub</a></li>
+<li><a href="https://github.com/nacaru-w/NacaruBot">Repositorio público
+de NacaruBot en GitHub</a></li>
 <li><a
 href="https://es.wikipedia.org/wiki/Usuario:Nacaru/twinkle-lite.js">Página
-de Wikipedia en la que se encuentra el código concatenado</a></li>
+de Wikipedia en la que se encuentra el código de Twinkle Lite
+concatenado</a></li>
 </ul>
 </section>
 <section id="atribución-de-imágenes" class="slide level2">

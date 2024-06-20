@@ -1,5 +1,5 @@
 ---
-title: "<span class='container'><img src='./img/Twinkle_Lite_logo.svg' /></span><br/>Twinkle Lite <span> <br/><span style='font-size: 0.65em;'>Una herramienta que ayuda al mantenimiento en Wikipedia</span>"
+title: "<span class='container'><img style='max-width: 3em;' src='./img/wmes_logo.svg' /></span><br/>Herramientas en el ecosistema Wikipedia <span> <br/><span style='font-size: 0.65em;'>o cómo hacer 100.000 ediciones en una semana</span>"
 author: <a href="https://es.wikipedia.org/wiki/Usuario:Nacaru">Nacho Casares</a>
 lang: es
 theme: white
@@ -16,28 +16,45 @@ transitionSpeed: fast
 ## 
 
 <div style="font-size:1.2em">
-[`es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite`](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite)
+[`https://github.com/nacaru-w`](https://github.com/nacaru-w)
 </div>
 
+## Cómo hacer scripts para Wikipedia
 
-## ¿Qué es Twinkle Lite?
-
-- Herramienta concebida para facilitar el mantenimiento en Wikipedia
-- Basada en una herramienta homónima desarrollada en la Wikipedia inglesa (¡que ya tuvo un intento de integración en eswiki en 2008!)*
-- Escrita en el lenguaje de programación [JavaScript](https://es.wikipedia.org/wiki/JavaScript)
-
-
-::: notes
-El Twinkle primigenio en eswiki permaneció utilizable durante unos años y fue posteriormente abandonado
-:::
+- Wikipedia (y el resto de proyectos Wikimedia) permiten elaborar scripts de usuario a través de las subpáginas de ese espacio de nombres.
+- Estos scripts pueden importarse través de tu página de `common.js` ([es.wikimedia.org/Usuario:NOMBRE DE USUARIO/common.js](https://es.wikipedia.org/wiki/Especial:MiP%C3%A1gina/common.js))
 
 ***
 
-- Hace uso de una librería mantenida por usuarios de la Wikipedia inglesa llamada [Morebits](https://en.wikipedia.org/wiki/MediaWiki:Gadget-morebits.js).
-- Emplea la [API](https://www.mediawiki.org/wiki/API:Main_page) de MediaWiki.
-- «Lite» porque está concebido como una versión ligera y sencilla de mantener en el tiempo.
+![](./img/my_profile_screenshot.png)
 
-# Instalación  {data-background-image="img/Elegant_Background-3.jpg"}
+***
+
+![](./img/twinkle_lite_screenshot.png)
+
+***
+
+![](./img/commonjs_screenshot.png)
+
+Solo hay que añadir<br/>`importScript('RUTA DEL SCRIPT EN WP')`<br/>para que empiece a funcionar.
+
+***
+
+## ¿Qué es Twinkle Lite?
+<span style="text-align: center;">[https://github.com/nacaru-w/twinkle-lite](https://github.com/nacaru-w/twinkle-lite)</span>
+
+- Herramienta concebida para facilitar el mantenimiento en Wikipedia
+- Basada en una herramienta homónima desarrollada en la Wikipedia inglesa (¡que ya tuvo un intento de integración en eswiki en 2008!)*
+- Escrita en [JavaScript](https://es.wikipedia.org/wiki/JavaScript), aunque pronto será transcluida a TS.
+
+***
+
+- Emplea la librería [Morebits](https://github.com/wikimedia-gadgets/twinkle/wiki/morebits) para el front-end
+- Interacciona con la [API](https://www.mediawiki.org/wiki/API:Main_page) de MediaWiki.
+- En pocas palabras: __lleva a cabo ediciones por el usuario que normalmente implican añadir Wikicódigo__
+- Más información en [https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite) (buscando «Twinkle Lite» en Google también sale)
+
+<!-- # Instalación  {data-background-image="img/Elegant_Background-3.jpg"}
 
 ## Instrucciones
 
@@ -72,7 +89,7 @@ Si todo se ha instalado correctamente debería de aparecer este menú en la part
 
 Si usas la interfaz antigua Vector 2010 o si has ocultado el menú de la derecha, las opciones de Twinkle Lite se situarán en el menú de edición superior en su lugar.
 
-![](img/Twinkle_lite_3.png){ width=80% }
+![](img/Twinkle_lite_3.png){ width=80% } -->
 
 # Utilización {data-background-image="img/Back3.png"}
 
@@ -120,11 +137,10 @@ Simplifica todo el proceso de apertura de una consulta de borrado a través de u
 
 Al igual que otros módulos, incluye una opción para dejar un mensaje de aviso en su PD a la persona que creó la página.
 
-# Futuro {data-background-image="img/Elegant_Background-2.jpg"}
+<!-- # Futuro {data-background-image="img/Elegant_Background-2.jpg"}
 
 ## Ideas
 
-- Expandir el módulo de etiquetado para incluir plantillas que van en otras posiciones dentro del artículo (<span class="code">`{{control de autoridades}}`</span> o <span class="code">`{{NF}}`</span>).
 - Añadir características que ayuden al mantenimiento de tareas específicas de los bibliotecarios.
 - Habilitar la posibilidad de activar herramienta en el menú de configuración de usuario a través de [MediaWiki:Gadgets-definition](https://es.wikipedia.org/wiki/MediaWiki:Gadgets-definition) (hay una solicitud procesándose en el tablón de editores de interfaz)
 
@@ -135,6 +151,84 @@ Al igual que otros módulos, incluye una opción para dejar un mensaje de aviso 
 - [Página de documentación en eswiki](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite)
 - [Repositorio público en GitHub](https://github.com/nacaru-w/twinkle-lite)
 - [Página de Wikipedia en la que se encuentra el código concatenado](https://es.wikipedia.org/wiki/Usuario:Nacaru/twinkle-lite.js)
+
+## Atribución de imágenes
+
+- [Back3 de pbgtree](https://commons.wikimedia.org/wiki/File:Back3.png) (CC BY-SA 4.0)
+- [Elegant Background-3](https://commons.wikimedia.org/wiki/File:Elegant_Background-3.jpg) y [Elegant Background-2](https://commons.wikimedia.org/wiki/File:Elegant_Background-2.jpg) de Nick Roach (GNU) -->
+
+# Cómo hacer 100.000 ediciones en una semana {data-background-image="img/Elegant_Background-2.jpg"}
+
+## Bots
+<span style="text-align: center;">[https://es.wikipedia.org/wiki/Wikipedia:Bot](https://es.wikipedia.org/wiki/Wikipedia:Bot)</span>
+
+- Son cuentas de usuario que poseen el flag «bot».
+- Esto implica un _ratelimit_ ilimitado.
+- Requieren de [autorización por consenso comunitario](https://es.wikipedia.org/wiki/Wikipedia:Bot/Autorizaciones)
+- Implica llevar a cabo ediciones de prueba que deben ser revisadas por la comunidad
+
+***
+
+- Existen numerosos _frameworks_ que permiten gestionar más fácilmente las ediciones en Wikipedia y las interacciones con la API de MediaWiki.
+- El más popular: [pywikibot](https://pypi.org/project/pywikibot/) ([lista completa](https://www.mediawiki.org/wiki/Manual:Creating_a_bot#Programming_languages_and_libraries))
+
+***
+
+![Diagrama de flujo para la implementación de bots](./img/bot_development_cycle.png)
+
+***
+
+## ¿Por qué hacer un bot?
+
+- En agosto de 2023 se llevó a cabo una [votación](https://es.wikipedia.org/wiki/Wikipedia:Votaciones/2023/Sobre_los_enlaces_internos_en_las_fechas) por decisión comunitaria.
+- Implicaba eliminar _todos_ los enlaces internos a fechas en artículos __no relacionados con el calendario__.
+- Trabajo manual elevado.
+
+*** 
+
+- Debates al respecto en el Café: tarea difícil de implementar, en Wikipedia hay muchas formas de enlazar fechas internamente.
+- Primeros pasos: script de usuario [`date-link-remover.js`](https://es.wikipedia.org/wiki/Usuario:Nacaru/date-link-remover.js)
+
+***
+
+![](./img/date-link-remover_demo.png)
+
+***
+
+## Nacarubot
+
+<span style="text-align: center">[https://github.com/nacaru-w/NacaruBot](https://github.com/nacaru-w/NacaruBot)</span>
+
+- Node.js (TypeScript)
+- Framework para bots: [mwn](https://www.npmjs.com/package/mwn)
+- [Expresiones regulares!!](https://github.com/nacaru-w/NacaruBot/blob/main/src/regexes/regexes.ts) (gracias a [-sasha-](https://es.wikipedia.org/wiki/Usuario:-sasha-))
+- __Muchos tests!!!__
+
+## Más seguridad
+
+- Evita ciertas categorías (tablas anuales, calendario, celebraciones del día, efemérides no oficiales, días)
+- Posee una regex específica para títulos.
+- Existe una [lista pública de excepciones](https://es.wikipedia.org/wiki/Usuario:NacaruBot/exceptions.json) guardada como `JSON` que pueden actualizar los administradores.
+
+## Cómo actúa
+
+- Hace una petición a la API de MediaWiki que devuelve 50 artículos pseudoaleatorios.
+- Analiza los títulos a través de una expresión regular para descartar artículos relacionados con el calendario.
+- Analiza el texto para ver si hay enlaces internos a fecha.
+- Aplica las expresiones regulares y devuelve el string con las modificaciones.
+
+***
+
+![](./img/bot.png)
+
+# Fin
+
+## Enlaces
+
+- [Página de documentación de Twinkle Lite en eswiki](https://es.wikipedia.org/wiki/Wikipedia:Twinkle_Lite)
+- [Repositorio público de Twinkle Lite en GitHub](https://github.com/nacaru-w/twinkle-lite)
+- [Repositorio público de NacaruBot en GitHub](https://github.com/nacaru-w/NacaruBot)
+- [Página de Wikipedia en la que se encuentra el código de Twinkle Lite concatenado](https://es.wikipedia.org/wiki/Usuario:Nacaru/twinkle-lite.js)
 
 ## Atribución de imágenes
 
